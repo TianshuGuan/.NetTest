@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Edit Image";
+}
+@model ImageSharingWithCloudStorage.Models.ImageInfo
+<h2>@ViewBag.Title</h2>
+<p><img src="@Model.URL" /></p>
+<p>image id:@Model.id</p>
+@{ Html.BeginForm("Edit", "Image", FormMethod.Post, new { enctype = "multipart/form-data" });}
+<fieldset>
+    @Html.AntiForgeryToken()
+    <legend>Edit Image Information</legend>
+    @Html.Hidden("image_id", Model.id)
+    <p>
+        Caption: @Html.TextBox("Caption")
+        @Html.ValidationMessage("Caption")
+    </p>
+    <p>Select a tag:@Html.DropDownList("TagId", ViewBag.tags as SelectList)</p>
+    <p>
+        Description: <br />
+        @Html.TextArea("Description", "Enter description here", 5, 60, null)
+        @Html.ValidationMessage("Description")
+    </p>
+    <p>
+        Date of Taken: @Html.TextBox("DateTaken")
+        @Html.ValidationMessage("DateTaken")
+    </p>
+    <p>
+        <input type="submit" value="Edit" />
+    </p>
+</fieldset>
+<p>@Html.ValidationSummary()</p>
+@{ Html.EndForm();}
+<p>@ViewBag.Message</p>
+

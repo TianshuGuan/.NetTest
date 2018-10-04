@@ -1,0 +1,23 @@
+﻿
+@model  IEnumerable<ImageSharingWithCloudStorage.Models.Image>
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+    <tr>
+        <th>Caption</th>
+        <th>Uploader</th>
+        <th>Tag</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var image in Model)
+    {
+        <tr>
+            <td>@image.Caption</td>
+            <td>@image.user.Email</td>
+            <td>@image.tag.Name</td>
+            <td>@Html.ActionLink("Approve", "doApprove", new { id = image.id })</td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ImageSharingWithCloudStorage.Models.LogEntity>
+
+<h2>@ViewBag.Title</h2>
+<table class="gridTable">
+    <tr>
+        <th>Caption</th>
+        <th>User</th>
+        <th>Time</th>
+    </tr>
+
+
+    @foreach (var log in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(log.Caption, "DoQuery", new { id = log.ImageId })</td>
+            <td>@log.userId</td>
+            <td>@string.Format("{0:t}",log.EntryTime)</td>
+        </tr>
+    }
+
+</table>
+

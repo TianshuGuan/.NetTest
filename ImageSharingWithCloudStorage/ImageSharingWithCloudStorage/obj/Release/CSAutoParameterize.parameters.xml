@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SQLServerExpress-Web.config Connection String" description="SQLServerExpress 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-ImageSharingWithCloudStorage-20171111051810.mdf;Initial Catalog=aspnet-ImageSharingWithCloudStorage-20171111051810;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\tguan\\source\\repos\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SQLServerExpress']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="Server=tcp:cs526-tguan2.database.windows.net,1433;Initial Catalog=ImageSharingDB;Persist Security Info=False;User ID=tguan;Password=Gts940320!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=180;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\tguan\\source\\repos\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AzureSQLDatabase-Web.config Connection String" description="AzureSQLDatabase 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="Server=tcp:cs526-tguan2.database.windows.net,1433;Initial Catalog=ImageSharingDB;Persist Security Info=False;User ID=tguan;Password=Gts940320!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=180;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\tguan\\source\\repos\\ImageSharingWithCloudStorage\\ImageSharingWithCloudStorage\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureSQLDatabase']/@connectionString" />
+  </parameter>
+</parameters>

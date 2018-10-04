@@ -1,0 +1,30 @@
+﻿@model  IEnumerable<ImageSharingWithCloudStorage.Models.Image>
+
+<h2>@ViewBag.Title</h2>
+<table class="gridTable">
+    <tr>
+        <th>Caption</th>
+        <th>Uploader</th>
+        <th>Tag</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var image in Model)
+    {
+        <tr>
+            <td>@image.Caption</td>
+            <td>@image.user.Email</td>
+            <td>@image.tag.Name</td>
+            <td>
+                @Html.ActionLink("Detail", "DoQuery", new { id = image.id })
+                @if (ViewBag.viewer_id.Equals(image.user.Id))
+                {
+                    <text>
+                        @Html.ActionLink("Edit", "Edit", new { id = image.id })
+                        @Html.ActionLink("Delete", "Delete", new { id = image.id })
+                    </text>
+                }
+            </td>
+        </tr>
+    }
+</table>

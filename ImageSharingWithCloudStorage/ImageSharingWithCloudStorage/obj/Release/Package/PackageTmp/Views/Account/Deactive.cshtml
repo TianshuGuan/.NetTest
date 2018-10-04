@@ -1,0 +1,15 @@
+﻿@model  IEnumerable<ImageSharingWithCloudStorage.Models.ApplicationUser>
+
+<h2>@ViewBag.Title</h2>
+
+<table>
+@foreach (var user in Model)
+{
+    <tr>
+        <td>@user.UserName</td>
+        <td>@Html.ActionLink("Deactive", "doDeactive", new { Id = user.Id })</td>
+    </tr>
+}
+</table>
+
+

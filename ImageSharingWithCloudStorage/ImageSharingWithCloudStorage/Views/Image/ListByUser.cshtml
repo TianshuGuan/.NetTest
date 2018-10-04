@@ -1,0 +1,19 @@
+﻿@model SelectList
+@{
+    ViewBag.Title = "List Image By User";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("DoListByUser", "Image", FormMethod.Get);}
+<fieldset>
+    <legend>whose image you want to search?</legend>
+    <p>
+        Select User: @Html.DropDownList("Id", Model);
+    </p>
+    <p>
+        <input type="submit" value="List" />
+    </p>
+</fieldset>
+@{ Html.EndForm();}
+
