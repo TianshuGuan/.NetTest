@@ -1,0 +1,17 @@
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\ContosoDATA.dll.config
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\ContosoDATA.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\ContosoDATA.pdb
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\ContosoModels.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\EntityFramework.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\ContosoModels.pdb
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\ContosoModels.dll.config
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\EntityFramework.xml
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.csprojAssemblyReference.cache
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.csproj.CoreCompileInputs.cache
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.csproj.CopyComplete
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.pdb
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.Migrations.updateDB.resources
+C:\Users\tguan\source\repos\ContosoWeb\ContosoDATA\obj\Debug\ContosoDATA.csproj.GenerateResource.cache

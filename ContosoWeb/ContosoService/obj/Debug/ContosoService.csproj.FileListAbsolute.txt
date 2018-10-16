@@ -1,0 +1,6 @@
+C:\Users\tguan\source\repos\ContosoWeb\ContosoService\bin\Debug\ContosoService.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoService\bin\Debug\ContosoService.pdb
+C:\Users\tguan\source\repos\ContosoWeb\ContosoService\obj\Debug\ContosoService.csprojAssemblyReference.cache
+C:\Users\tguan\source\repos\ContosoWeb\ContosoService\obj\Debug\ContosoService.csproj.CoreCompileInputs.cache
+C:\Users\tguan\source\repos\ContosoWeb\ContosoService\obj\Debug\ContosoService.dll
+C:\Users\tguan\source\repos\ContosoWeb\ContosoService\obj\Debug\ContosoService.pdb
