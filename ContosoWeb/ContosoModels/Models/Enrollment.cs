@@ -9,6 +9,11 @@ namespace ContosoModels.Models
 {
     public class Enrollment :BaseEntity
     {
+        public Enrollment(int student, int course)
+        {
+            this.StudentId = student;
+            this.CourseId = course;
+        }
         [ForeignKey("Student")]
         public int StudentId { get; set; }
         [ForeignKey("Course")]

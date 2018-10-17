@@ -6,7 +6,7 @@ using System.Transactions;
 using ContosoData.Repositories;
 using ContosoModels.Models;
 
-namespace Contoso.Service
+namespace ContosoService.Services
 {
     public class StudentService : IStudentService
     {
@@ -53,14 +53,14 @@ namespace Contoso.Service
                 transaction.Complete();
             }
         }
+
     }
 
     public interface IStudentService
     {
-        IEnumerable<Student> GetAllStudents(int? page, int pageSize, out int totalCount);
+        IEnumerable<Student> GetAllStudents();
         Student GetStudentById(int id);
         IEnumerable<Student> GetStudentByName(string name);
-        Student GetStudentByCode(string employeeCode);
         void CreateStudent(Student student);
         void UpdateStudent(Student student);
     }

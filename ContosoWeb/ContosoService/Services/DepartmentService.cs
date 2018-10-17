@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Contoso.Service
+namespace ContosoService.Services
 {
    public class DepartmentService: IDepartmentService
    {

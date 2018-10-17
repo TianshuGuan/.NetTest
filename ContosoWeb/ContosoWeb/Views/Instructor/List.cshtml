@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ContosoModels.Models.Instructor>
+
+
+<h2>@ViewBag.Title</h2>
+@foreach (var instructor in Model)      
+{
+    <li>@Html.ActionLink(instructor.FirstName + " "+instructor.LastName, "Detial",instructor)</li>
+}
+@if (ViewBag.Title == "List All Instructors")
+{
+    <li>@Html.ActionLink("Add New Instructor","Create")</li>
+}
+

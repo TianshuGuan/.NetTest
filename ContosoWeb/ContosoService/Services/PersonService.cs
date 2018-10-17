@@ -3,7 +3,7 @@ using ContosoModels.Models;
 using System;
 using System.Collections.Generic;
 
-namespace Contoso.Service
+namespace ContosoService.Services
 {
     public class PersonService : IPersonService
     {

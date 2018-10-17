@@ -1,0 +1,15 @@
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\obj\Debug\ContosoService.csprojAssemblyReference.cache
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\obj\Debug\ContosoService.csproj.CoreCompileInputs.cache
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoService.dll
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoService.pdb
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoDATA.dll
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoModels.dll
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\EntityFramework.dll
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoDATA.pdb
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoDATA.dll.config
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoModels.pdb
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\ContosoModels.dll.config
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\bin\Debug\EntityFramework.xml
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\obj\Debug\ContosoService.csproj.CopyComplete
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\obj\Debug\ContosoService.dll
+C:\Users\tguan\source\repos\TianshuGuan\.NetTest\ContosoWeb\ContosoService\obj\Debug\ContosoService.pdb

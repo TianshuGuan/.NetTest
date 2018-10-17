@@ -3,7 +3,7 @@ using System.Linq;
 using ContosoData.Repositories;
 using ContosoModels.Models;
 
-namespace Contoso.Service
+namespace ContosoService.Services
 {
     public class RoleService:IRoleService
     {

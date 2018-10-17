@@ -16,12 +16,10 @@ namespace ContosoModels.Models
         public int Budget { get; set; }
         [DataType(DataType.DateTime)]
         public DateTime StartDate { get; set; }
-        [ForeignKey("Instructor")]
-        public int InstructorId { get; set; }
 
         public byte[] RowVeersion { get; set; }
 
-        public Instructor Instructor { get; set; }
+        public virtual ICollection<Instructor> Instructors { get; set; }
 
         public virtual ICollection<Course> Courses { get; set; }
 

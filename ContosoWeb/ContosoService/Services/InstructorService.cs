@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 
-namespace Contoso.Service
+namespace ContosoService.Services
 {
    public class InstructorService: IInstructorService
    {
@@ -50,6 +50,16 @@ namespace Contoso.Service
                 transaction.Complete();
             }
         }
+
+        public IEnumerable<Instructor> GetInstructorByDepartment(int departmentId)
+        {
+            return _instructorRepository.FindByInclude(d => d.Id == departmentId, i => i.Department);
+        }
+
+        public IEnumerable<Instructor> GetInstructorByCourse(int courseId)
+        {
+            return _instructorRepository.FindByInclude(c => c.Id == courseId, i => i.Courses);
+        }
     }
 
    public interface IInstructorService
@@ -57,6 +67,8 @@ namespace Contoso.Service
         IEnumerable<Instructor> GetAllInstructors();
         Instructor GetInstructorById(int id);
         IEnumerable<Instructor> GetInstructorByName(string name);
+        IEnumerable<Instructor> GetInstructorByDepartment(int departmentId);
+        IEnumerable<Instructor> GetInstructorByCourse(int courseId);
         void CreateInstructor(Instructor instructor);
         void UpdateInstructor(Instructor instructor);
     }

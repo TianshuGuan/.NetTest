@@ -79,9 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\ContosoDBContext.cs" />
-    <Compile Include="Migrations\201810121921227_updateDB.cs" />
-    <Compile Include="Migrations\201810121921227_updateDB.Designer.cs">
-      <DependentUpon>201810121921227_updateDB.cs</DependentUpon>
+    <Compile Include="Migrations\201810170250154_initialDB.cs" />
+    <Compile Include="Migrations\201810170250154_initialDB.Designer.cs">
+      <DependentUpon>201810170250154_initialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.Context.cs">
@@ -101,7 +101,6 @@
     <Compile Include="Repositories\InstructorRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\PersonRepository.cs" />
-    <Compile Include="Repositories\PersonRoleRepository.cs" />
     <Compile Include="Repositories\RoleRepository.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
   </ItemGroup>
@@ -122,17 +121,16 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810170250154_initialDB.resx">
+      <DependentUpon>201810170250154_initialDB.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ContosoModels\ContosoModels.csproj">
       <Project>{4fb04d14-8e5b-4c4b-a4d3-f7521ebcfcbe}</Project>
       <Name>ContosoModels</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810121921227_updateDB.resx">
-      <DependentUpon>201810121921227_updateDB.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

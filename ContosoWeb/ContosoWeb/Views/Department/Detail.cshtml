@@ -1,0 +1,9 @@
+﻿@model ContosoModels.Models.Department
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>@ViewBag.DepartmentName</h2>
+<p>@Html.ActionLink("View Instructors","ToInstructor",Model)</p>
+<p>@Html.ActionLink("View Courses","ToCourse",Model)</p>
+

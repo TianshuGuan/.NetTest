@@ -175,7 +175,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,6 +262,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Department\Index.cshtml" />
+    <Content Include="Views\Department\Detail.cshtml" />
+    <Content Include="Views\Instructor\Index.cshtml" />
+    <Content Include="Views\Instructor\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,7 +285,7 @@
       <Name>ContosoModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\ContosoService\ContosoService.csproj">
-      <Project>{d69adf7d-e690-4784-ad75-8cf1ee41cf69}</Project>
+      <Project>{0eb27297-1e34-413f-bbf2-cc721616bfd9}</Project>
       <Name>ContosoService</Name>
     </ProjectReference>
   </ItemGroup>
