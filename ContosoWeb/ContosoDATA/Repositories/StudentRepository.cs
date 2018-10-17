@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Contoso.Model;
+using ContosoDATA.DAL;
+using ContosoModels.Models;
 
-namespace Contoso.Data.Repositories
+namespace ContosoData.Repositories
 {
     public class StudentRepository : GenericRepository<Student>, IStudentRepository
     {
-        public StudentRepository(ContosoDbContext context) : base(context)
+        public StudentRepository(ContosoDBContext context) : base(context)
         {
             
         }
 
-        public Student GetStudentByLastName(string lastName)
+        public List<Student> GetStudentByLastName(string lastName)
         {
-            var student = _context.Persons.OfType<Student>().FirstOrDefault(s => s.LastName == lastName);
-            return student;
+            var student = _context.Person.OfType<Student>().Where(s => s.LastName == lastName);
+            return student.ToList();
         }
     }
 
     public interface IStudentRepository : IRepository<Student>
     {
-        Student GetStudentByLastName(string lastName);
+        List<Student> GetStudentByLastName(string lastName);
     }
 }

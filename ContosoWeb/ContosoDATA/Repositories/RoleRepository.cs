@@ -1,10 +1,11 @@
-﻿using Contoso.Model.Models;
+﻿using ContosoDATA.DAL;
+using ContosoModels.Models;
 
-namespace Contoso.Data.Repositories
+namespace ContosoData.Repositories
 {
     public class RoleRepository : GenericRepository<Role>, IRoleRepository
     {
-        public RoleRepository(ContosoDbContext context) : base(context)
+        public RoleRepository(ContosoDBContext context) : base(context)
         {
         }
     }

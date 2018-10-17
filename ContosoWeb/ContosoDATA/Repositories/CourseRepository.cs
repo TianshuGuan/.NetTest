@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Contoso.Model;
+using ContosoDATA.DAL;
+using ContosoModels.Models;
 
-namespace Contoso.Data.Repositories
+namespace ContosoData.Repositories
 {
    public class CourseRepository: GenericRepository<Course>, ICoursepository
     {
-        public CourseRepository(ContosoDbContext context) : base(context)
+        public CourseRepository(ContosoDBContext context) : base(context)
         {
         }
     }

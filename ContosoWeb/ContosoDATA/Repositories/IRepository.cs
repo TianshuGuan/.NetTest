@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Contoso.Model.Common;
+using ContosoModels.Models;
 
-namespace Contoso.Data
+namespace ContosoData.Repositories
 {
     public interface IRepository<T> where T : class
     {

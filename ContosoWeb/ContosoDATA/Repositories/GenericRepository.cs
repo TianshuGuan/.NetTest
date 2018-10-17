@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using ContosoDATA.DAL;
 using ContosoModels.Models;
 
-namespace Contoso.Data
+namespace ContosoData.Repositories
 {
     public abstract class GenericRepository<T> : IRepository<T> where T : IEntity
     {

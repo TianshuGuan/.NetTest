@@ -12,6 +12,8 @@ namespace ContosoModels.Models
         [DataType(DataType.DateTime)]
         public DateTime HiredDate { get; set; }
 
+
+
         public virtual ICollection<Course> Courses { get; set; }
 
         public virtual OfficeAssignment OfficeAssignment { get; set; }

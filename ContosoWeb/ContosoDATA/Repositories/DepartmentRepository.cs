@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using ContosoDATA.DAL;
 using ContosoModels.Models;
 
-namespace Contoso.Data.Repositories
+namespace ContosoData.Repositories
 {
    public class DepartmentRepository: GenericRepository<Department>, IDepartmentRepository
     {
