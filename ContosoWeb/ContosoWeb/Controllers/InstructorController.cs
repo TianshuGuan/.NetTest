@@ -48,5 +48,39 @@ namespace ContosoWeb.Controllers
             ViewBag.Title = "Empty Result";
             return View();
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(Instructor instructor)
+        {
+            _service.CreateInstructor(instructor);
+            var newInstructor = _service.GetInstructorByName(instructor.FirstName, instructor.LastName).FirstOrDefault();
+            return View("Detail", newInstructor.Id);
+        }
+        public ActionResult Detail(Instructor instructor)
+        {
+            return View(instructor);
+        }
+
+        public ActionResult ToCourses(Instructor instructor)
+        {
+            return RedirectToAction("List", "Courses", instructor);
+        }
+
+        public ActionResult Update(int InstructorId)
+        {
+            var instructor = _service.GetInstructorById(InstructorId);
+            return View(instructor);
+        }
+
+        [HttpPost]
+        public ActionResult Update(Instructor instructor)
+        {
+            _service.UpdateInstructor(instructor);
+            return View("Detail", instructor.Id);
+        }
     }
 }

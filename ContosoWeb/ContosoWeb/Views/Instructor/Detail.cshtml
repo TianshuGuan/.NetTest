@@ -1,0 +1,12 @@
+﻿@model ContosoModels.Models.Instructor
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Instructor Details</h2>
+<li>@Model.FirstName @Model.LastName;</li>
+<li>Email:@Model.Email</li>
+<li>Phone:@Model.Phone</li>
+<li>@Html.ActionLink("View Courses","ToCourses",Model)</li>
+<li>@Html.ActionLink("Update Information","Update",Model)</li>
+

@@ -26,9 +26,9 @@ namespace ContosoService.Services
             return _instructorRepository.GetById(id);
         }
         //get instructors by last name
-        public IEnumerable<Instructor> GetInstructorByName(string name)
+        public IEnumerable<Instructor> GetInstructorByName(string FirstName,string LastName)
         {
-            return _instructorRepository.GetMany(i => i.LastName == name);
+            return _instructorRepository.GetMany(i => i.LastName == LastName && i.FirstName == FirstName);
         }
 
         public void CreateInstructor(Instructor instructor)
@@ -66,7 +66,7 @@ namespace ContosoService.Services
     {
         IEnumerable<Instructor> GetAllInstructors();
         Instructor GetInstructorById(int id);
-        IEnumerable<Instructor> GetInstructorByName(string name);
+        IEnumerable<Instructor> GetInstructorByName(string FirstName, string LastName);
         IEnumerable<Instructor> GetInstructorByDepartment(int departmentId);
         IEnumerable<Instructor> GetInstructorByCourse(int courseId);
         void CreateInstructor(Instructor instructor);

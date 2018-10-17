@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create New Instructor</h2>
+
+@{Html.BeginForm("Create", "Instructor", FormMethod.Post, new { enctype = "multipart/form-data" });}
+<fieldset>
+    @Html.AntiForgeryToken()
+    <legend>Enter Instructor Information</legend>
+    <p>
+        FirstName:@Html.TextBox("FirstName")
+        @Html.ValidationMessage("FirstName")
+    </p>
+    <p>
+        LastName:@Html.TextBox("LastName")
+        @Html.ValidationMessage("LastName")
+    </p>
+    <p>
+        Date Of Birth:@Html.TextBox("DateOfBirth")
+        @Html.ValidationMessage("DateOfBirth")
+    </p>
+    <p>
+        Email:@Html.TextBox("Email")
+        @Html.ValidationMessage("Email")
+    </p>
+    <p>
+        Phone:@Html.TextBox("Phone")
+        @Html.ValidationMessage("Phone")
+    </p>
+    <p>
+        Address Line 1:@Html.TextArea("AddressLine1")
+        @Html.ValidationMessage("AddressLine1")
+    </p>
+    <p>
+        Address Line 2:@Html.TextArea("AddressLine2")
+        @Html.ValidationMessage("AddressLine2")
+    </p>
+    <p>
+        Unit Or Apt Number:@Html.TextBox("UnitOrApartmentNumber")
+        @Html.ValidationMessage("UnitOrApartmentNumber")
+    </p>
+    <p>
+        City:@Html.TextBox("City")
+        @Html.ValidationMessage("City")
+    </p>
+    <p>
+        State:@Html.TextBox("State")
+        @Html.ValidationMessage("State")
+    </p>
+    <p>
+        Zipcode:@Html.TextBox("ZipCode")
+        @Html.ValidationMessage("ZipCode")
+    </p>
+    <p>
+        <input type="submit" value="create"/>
+    </p>
+</fieldset>
+<p>@Html.ValidationSummary()</p>
+@{ @Html.EndForm();}
+<p>@ViewBag.Message</p>
+

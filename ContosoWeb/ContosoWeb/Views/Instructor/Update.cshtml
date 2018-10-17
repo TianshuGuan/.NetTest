@@ -1,0 +1,55 @@
+﻿@model ContosoModels.Models.Instructor
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update Information</h2>
+
+@{ Html.BeginForm("Update", "Instructor", FormMethod.Post, new { enctype = "multipart/form-data" })}
+<fieldset>
+    @Html.AntiForgeryToken()
+    <legend>Enter Instructor Information</legend>
+    @Html.HiddenFor(i => i.Id);
+    <p>@Model.FirstName @Model.LastName</p>
+    <p>
+        Email:@Html.TextBoxFor(i => i.Email,new { Value = Model.Email});
+        @Html.ValidationMessage("Email")
+    </p>
+    <p>
+        Phone:@Html.TextBoxFor(i=>i.Phone,new { Value = Model.Phone})
+        @Html.ValidationMessage("Phone")
+    </p>
+    <p>
+        Address Line 1:@Html.TextAreaFor(i=>i.AddressLine1,new { Value = Model.AddressLine1})
+        @Html.ValidationMessage("AddressLine1")
+    </p>
+    <p>
+        Address Line 2:@Html.TextAreaFor(i=>i.AddressLine2,new { Value = Model.AddressLine2})
+        @Html.ValidationMessage("AddressLine2")
+    </p>
+    <p>
+        Unit Or Apt Number:@Html.TextBoxFor(i=>i.UnitOrAppartmentNumber,new { Value = Model.UnitOrAppartmentNumber})
+        @Html.ValidationMessage("UnitOrApartmentNumber")
+    </p>
+    <p>
+        City:@Html.TextBoxFor(i=>i.City,new { Value = Model.City })
+        @Html.ValidationMessage("City")
+    </p>
+    <p>
+        State:@Html.TextBoxFor(i=>i.State,new { Value = Model.State})
+        @Html.ValidationMessage("State")
+    </p>
+    <p>
+        Zipcode:@Html.TextBoxFor(i=>i.ZipCode , new { Value = Model.ZipCode})
+        @Html.ValidationMessage("ZipCode")
+    </p>
+    <p>
+        <input type="submit" value="create" />
+    </p>
+</fieldset>
+<p>@Html.ValidationSummary()</p>
+@{ @Html.EndForm();}
+<p>@ViewBag.Message</p>
+
+
+
